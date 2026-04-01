@@ -4,11 +4,13 @@
 - To do that decisions making, we need programs. Machines understand only binary inputs. To handle them, we depend on Programming languages. 
 - First high level languages like Fortran and Cobol were used in the scientific and Banking industry respectively. (Mid 50s and 60s)
 
-#### Structural Programming languages : C(1972), SQL(1974)... Functions become popular with these languages. 
+#### Structural Programming languages 
+- C (1972), SQL(1974)... Functions become popular with these languages. 
 - U could create custom datatypes like Structures to store multiple sets of data as one unit. 
 
-#### Object Oriented Programming: C++ was C with OOP features, making it one of the most powerful languages in the Computing world. Developed in 1983. 
-Perl : Basically on Unix machines for system administration support and first web development environments.
+#### Object Oriented Programming: 
+- C++ was C with OOP features, making it one of the most powerful languages in the Computing world. Developed in 1983. 
+- Perl : Basically on Unix machines for system administration support and first web development environments.
 
 #### Internet and Scripting Era:(1990s)
 1. Python : Good for data sciences and AI. 
@@ -16,9 +18,9 @@ Perl : Basically on Unix machines for system administration support and first we
 3. Javascipt (1995): Client side script. Developed by Netscape, currently its the main scripting language for all Web computing.   
 4. PHP and Ruby : Server side development. 
 
-#### Modren era : C# (2001) , Swift programming languages came up. 
-- Developed by MS for creating Windows Apps. Similar to C++ with more cleaner syntax.
-- U need a tool like Visual Studio to develop the code. It is available in multiple editions like Community(Free), Developer (Proprietory).
+#### Modren era : 
+- C# (2001) , Swift programming languages came up. Developed by MS for creating Windows Apps. Similar to C++ with more cleaner syntax.
+  - U need a tool like Visual Studio to develop the code. It is available in multiple editions like Community(Free), Developer (Proprietory).
 - Developed by Anders Heilsberg with lots of features of C++ and few features from Java and VB. 
 
 #### Features of C# Language:
@@ -63,7 +65,8 @@ For development purposes, you shall obtain licences for the Visual Studio and co
 2. Namespace does not have any file as such. It is purely conceptual.
 3. By default, every code U develop in the Project shall have the Project name as the default namespace. 
 
-#### class : Fundamental unit of any C# Application. This represents a program to execute. 
--  function called Main(Case sensitive) with static modifier
+#### class
+- Fundamental unit of any C# Application. This represents a program to execute. 
+- function called Main(Case sensitive) with static modifier
 
 
