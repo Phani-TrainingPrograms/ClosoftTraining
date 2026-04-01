@@ -34,7 +34,7 @@ Its a free Open source cross platform developer Platform for building various ki
 One Unified system for all kinds of App developement: Web, Mobile, Desktop, Cloud, Gaming as well as AI and Data Analytics. 
 It supports multiple languages like C#, VB, Cobol, python, pascal and many more.
 Supports AI development using Semantic Kernal which allows developers to create LLMs and manage the agent based workflows with the existing applications. 
-
+<img width="574" height="627" alt="image" src="https://github.com/user-attachments/assets/8928118c-5009-470d-a4ef-3e33aa85cb2e" />
 ### How does this work?
 - Write : U develop the code using your fav language like C#, VB or any langauge of your choice
 - Compile: The code that U develop shall be compiled to an Intermediate language(IL).
@@ -65,5 +65,5 @@ For development purposes, you shall obtain licences for the Visual Studio and co
 
 #### class : Fundamental unit of any C# Application. This represents a program to execute. 
 -  function called Main(Case sensitive) with static modifier
-<img width="574" height="627" alt="image" src="https://github.com/user-attachments/assets/8928118c-5009-470d-a4ef-3e33aa85cb2e" />
+
 
