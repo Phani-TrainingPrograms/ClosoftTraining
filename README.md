@@ -40,6 +40,7 @@ Supports AI development using Semantic Kernal which allows developers to create 
 - Compile: The code that U develop shall be compiled to an Intermediate language(IL).
 - Deploy: U package this IL into a DLL (Library) or EXE(App) -> we call in .NET as Assembly. Assembly is the Deployment Unit of .NET.
 - Execute: U can execute the EXE Assembly wherever .NET is installed. When the app executes, a JIT compiler in the Environment converts UR IL into specific machine code optimized to execute on that CPU. 
+<img width="1080" height="731" alt="image" src="https://github.com/user-attachments/assets/82c6abec-cbac-425d-96b4-37d05f7a1932" />
 
 ### How to develop this kind of Apps?
 1. Any Text Editor
