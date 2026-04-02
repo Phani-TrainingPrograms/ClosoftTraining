@@ -1,0 +1,8 @@
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\obj\Debug\Day2ConsoleApp.csproj.AssemblyReference.cache
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\obj\Debug\Day2ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\bin\Debug\d.exe.config
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\bin\Debug\d.exe
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\bin\Debug\d.pdb
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\obj\Debug\d.exe
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\obj\Debug\d.pdb
+C:\Trainings\TrainingCamp\Day2ConsoleApp\Day2ConsoleApp\obj\Debug\d.exe.config
