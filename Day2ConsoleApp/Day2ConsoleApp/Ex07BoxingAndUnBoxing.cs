@@ -16,9 +16,22 @@ namespace Day2ConsoleApp
             object value2 = 234.456;
             object value3 = "Text Message";
 
-            object copy = (long)value + 123;//UNBOXING is an explicit cast that U do for object types to retrieve back their original behavior. 
+            object copy = (int)value + 123;//UNBOXING is an explicit cast that U do for object types to retrieve back their original behavior. 
 
-            //TODO: How is this different from var? 
+            //TODO: How is this different from var? //object can store any kind of data even after assignment. var does not do that. var does not boxing or unboxing. var is purely a syntactical sugar for the compiler to infer the type of the variable based on the assigned value. Once the type is inferred, it cannot be changed. object can be used as return type of a function, args for a function, fields of a class which cannot be done with var. var is purely a local variable.
+            //
+
+            //Equals methods allows you to perform value comparison b/w 2 objects. It is a method created in Object class which can be modified by the programmer to perform value comparison based on the type of the object. 
+
+            object tempObj = 123;
+            object tempObj2 = tempObj;//setting the reference of tempObj2 to the same reference of tempObj. 
+            Console.WriteLine(tempObj.Equals(tempObj2));
+            tempObj = 234;
+            Console.WriteLine($"The value of tempObj2 is {tempObj2}");
+            Console.WriteLine(tempObj.Equals(tempObj2));
+            //Using OOP, we can modify the way Equals method works to suit our requirement of defining the equality of the objects of our class. 
         }
+
+
     }
 }
