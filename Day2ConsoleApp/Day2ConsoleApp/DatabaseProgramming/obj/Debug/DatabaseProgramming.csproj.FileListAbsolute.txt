@@ -1,0 +1,8 @@
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\bin\Debug\DatabaseProgramming.exe.config
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\bin\Debug\DatabaseProgramming.exe
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\bin\Debug\DatabaseProgramming.pdb
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.csproj.AssemblyReference.cache
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.csproj.CoreCompileInputs.cache
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.exe
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.pdb
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.exe.config
