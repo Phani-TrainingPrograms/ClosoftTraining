@@ -8,11 +8,31 @@ namespace DatabaseProgramming
  
     internal class Program
     {
+        static void WriteToDb(string tableName, string inputs)
+        {
+            SqlConnection con = new SqlConnection(STRCONNECTION);
+            var query = $"Insert into {tableName} (Description) values('{inputs}')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         const string STRCONNECTION = "Data Source=.\\SQLEXPRESS;Initial Catalog=TitanDb;Integrated Security=True;Encrypt=False";
         static void Main(string[] args)
         {
             try
             {
+                WriteToDb("ErrorInfo", "Trying to read Data");
                 //todo: Modify this code to allow user to enter the values
                 //insertRecordDemo("Ramesh", "Madurai", 50000);
                 var data =  readRecords();
@@ -25,6 +45,7 @@ namespace DatabaseProgramming
             }
             catch(SqlException ex)
             {
+                WriteToDb("ErrorInfo", ex.Message);
                 Console.WriteLine(ex.Message);
             }
             catch(Exception ex)
