@@ -1,0 +1,7 @@
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\bin\Debug\DataApplication.Services.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\bin\Debug\DataApplication.DataAccess.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\bin\Debug\DataApplication.Models.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\obj\Debug\DataApplication.Services.csproj.AssemblyReference.cache
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\obj\Debug\DataApplication.Services.csproj.CoreCompileInputs.cache
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\obj\Debug\DataAppl.70370563.Up2Date
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Services\obj\Debug\DataApplication.Services.dll

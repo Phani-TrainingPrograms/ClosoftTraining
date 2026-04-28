@@ -1,0 +1,12 @@
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\obj\Debug\DataApplication.ConsoleUI.csproj.AssemblyReference.cache
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\obj\Debug\DataApplication.ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\Menu.txt
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\DataApplication.Console.exe.config
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\DataApplication.Console.exe
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\DataApplication.Console.pdb
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\obj\Debug\DataApplication.Console.exe
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\obj\Debug\DataApplication.Console.pdb
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\DataApplication.Models.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\DataApplication.Services.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\bin\Debug\DataApplication.DataAccess.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Console\obj\Debug\DataAppl.EFDC01B8.Up2Date

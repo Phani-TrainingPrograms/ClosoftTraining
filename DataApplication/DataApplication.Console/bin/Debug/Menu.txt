@@ -1,0 +1,7 @@
+﻿```````````````````PRODUCT MANAGEMENT SOFTWARE````````````````````````
+TO ADD THE PRODUCT----------->PRESS 1
+TO UPDATE PRODUCT------------>PRESS 2
+TO DELETE PRODUCT------------>PRESS 3
+TO FIND PRODUCT-------------->PRESS 4
+PS: ANY OTHER KEY IS TO EXIT THE APP
+````````````````````````````````````````````````````````````````````````

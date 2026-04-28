@@ -1,0 +1,4 @@
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Models\bin\Debug\DataApplication.Models.dll
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Models\obj\Debug\DataApplication.Models.csproj.AssemblyReference.cache
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Models\obj\Debug\DataApplication.Models.csproj.CoreCompileInputs.cache
+C:\Trainings\TrainingCamp\DataApplication\DataApplication.Models\obj\Debug\DataApplication.Models.dll
