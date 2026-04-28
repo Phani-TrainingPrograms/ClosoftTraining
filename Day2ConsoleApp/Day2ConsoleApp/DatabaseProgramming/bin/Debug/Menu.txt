@@ -1,0 +1,7 @@
+﻿```````````````````EMPLOYEE MANAGEMENT SOFTWARE````````````````````````
+TO ADD THE RECORD----------->PRESS 1
+TO UPDATE RECORD------------>PRESS 2
+TO DELETE RECORD------------>PRESS 3
+TO FIND RECORD-------------->PRESS 4
+PS: ANY OTHER KEY IS TO EXIT THE APP
+````````````````````````````````````````````````````````````````````````

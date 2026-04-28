@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;//Namespace for all ADO.NET SQL server classes. 
+using System.Data.SqlTypes;
+using System.IO;
+using System.Threading;//Namespace for all ADO.NET SQL server classes. 
 
 namespace DatabaseProgramming
 {
@@ -30,28 +32,158 @@ namespace DatabaseProgramming
         const string STRCONNECTION = "Data Source=.\\SQLEXPRESS;Initial Catalog=TitanDb;Integrated Security=True;Encrypt=False";
         static void Main(string[] args)
         {
+            var menu = File.ReadAllText("Menu.txt");//As the file is copied to the output dir, the app can read the file directly without any path information.
+            var processing = true;
+            do
+            {
+                Console.WriteLine(menu);
+                string choice = Console.ReadLine();
+                processing = processMenu(choice);
+                Thread.Sleep(3000);
+                Console.Clear();
+            }while(processing);                                        
+        }
+
+        private static bool processMenu(string choice)
+        {
+            switch(choice)
+            {
+                case "1": handleAddOperation(); break;
+                case "2": handleUpdateOperation(); break;
+                case "3": handleDeleteOperation(); break;
+                case "4": handleAddOperation(); break;
+                default:
+                    return false;
+            }
+            return true;
+        }
+
+        private static void handleDeleteOperation()
+        {
+            Console.WriteLine("Enter the Id of the Employee to delete");
+            int id;
+            if(!int.TryParse(Console.ReadLine(), out id))
+            {
+                Console.WriteLine("not valid input, exiting the procedure");
+                return;
+            }
             try
             {
-                WriteToDb("ErrorInfo", "Trying to read Data");
-                //todo: Modify this code to allow user to enter the values
-                //insertRecordDemo("Ramesh", "Madurai", 50000);
-                var data =  readRecords();
-                foreach(var record in data)
+                deleteRecord(id);
+            }
+            catch(Exception e) { Console.WriteLine(e.Message); }
+        }
+
+        private static void handleUpdateOperation()
+        {
+            Console.WriteLine("Enter the Id of the Employee to update");
+            int id;
+            if(!int.TryParse(Console.ReadLine(), out id))
+            {
+                Console.WriteLine("not valid input, exiting the procedure");
+                return;
+            }
+            Console.WriteLine("Enter the Name ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter the Address");
+            string address = Console.ReadLine();
+            Console.WriteLine("Enter the salary");
+            int salary;
+            if(!int.TryParse(Console.ReadLine(), out salary))
+            {
+                Console.WriteLine("not valid input, exiting the procedure");
+                return;
+            }
+            try
+            {
+                updateRecord(id, name, address, salary);
+            }
+            catch(Exception e) { Console.WriteLine(e.Message); }
+        }
+
+        private static void handleAddOperation()
+        {
+            Console.WriteLine("Enter the Name");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter the Address");
+            string address = Console.ReadLine();
+            Console.WriteLine("Enter the salary");
+            int salary;
+            if(!int.TryParse(Console.ReadLine(), out salary))
+            {
+                Console.WriteLine("not valid input, exiting the procedure");
+                return;
+            }
+            try
+            {
+                insertRecordDemo(name, address, salary);
+            }
+            catch (Exception e) { Console.WriteLine(e.ToString()); }
+        }
+
+        private static void deleteRecord(int v)
+        {
+            var query = $"Delete From EMPLOYEE WHERE EMPID = " + v;
+            var connection = new SqlConnection(STRCONNECTION);
+            var cmd = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();//connect to the database.
+                var rowsAffected = cmd.ExecuteNonQuery();
+                if(rowsAffected > 0)
                 {
-                    Console.WriteLine($"{record.Item1}, {record.Item2}, {record.Item3}");
+                    Console.WriteLine("Record Deleted successfully");
                 }
-                //todo: Instead of tuple, Create a new class called Employee with EmpId...
-                //popualte the objects with the data and return as List<Employee>
+                else
+                {
+                    throw new Exception("Record not found to Delete");
+                }
             }
             catch(SqlException ex)
             {
-                WriteToDb("ErrorInfo", ex.Message);
-                Console.WriteLine(ex.Message);
+                throw ex;
             }
-            catch(Exception ex)
+            catch(Exception genEx)
             {
-                Console.WriteLine(ex.Message);
+                throw genEx;
             }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        private static void updateRecord(int v1, string name, string address, int salary)
+        {
+            var query = $"Update Employee Set EmpName  = '{name}', EmpAddress = '{address}', EmpSalary = {salary} where EmpID = {v1}";
+            var connection = new SqlConnection(STRCONNECTION);
+            var cmd = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();//connect to the database.
+                var rowsAffected = cmd.ExecuteNonQuery();
+                if(rowsAffected > 0)
+                {
+                    Console.WriteLine("Record updated");
+                }
+                else
+                {
+                    throw new Exception("Record not found to update");
+                }
+            }
+            catch(SqlException ex)
+            {
+                throw ex;
+            }
+            catch(Exception genEx)
+            {
+                throw genEx;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
         }
 
         private static List<(string, string , string)> readRecords()

@@ -6,3 +6,4 @@ C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseP
 C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.exe
 C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.pdb
 C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\obj\Debug\DatabaseProgramming.exe.config
+C:\Trainings\TrainingCamp\Day2ConsoleApp\DatabaseProgramming\bin\Debug\Menu.txt
