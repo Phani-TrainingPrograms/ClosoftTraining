@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37216.2 d17.14
+VisualStudioVersion = 17.14.37216.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApplication.Models", "DataApplication.Models\DataApplication.Models.csproj", "{5EDDBF33-2595-4189-94C8-9281ECBCFDE1}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApplication.Services", "DataApplication.Services\DataApplication.Services.csproj", "{10FCA3F2-A712-4906-8F48-4D288DB7F4BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApplication.ConsoleUI", "DataApplication.Console\DataApplication.ConsoleUI.csproj", "{03A6266F-C639-4925-8FE5-214307BDB07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApplication.WinApp", "DataApplication.WinApp\DataApplication.WinApp.csproj", "{8E72A87C-CCC2-44DC-B1E5-5C7EFDCCC0BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{03A6266F-C639-4925-8FE5-214307BDB07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A6266F-C639-4925-8FE5-214307BDB07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A6266F-C639-4925-8FE5-214307BDB07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E72A87C-CCC2-44DC-B1E5-5C7EFDCCC0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E72A87C-CCC2-44DC-B1E5-5C7EFDCCC0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E72A87C-CCC2-44DC-B1E5-5C7EFDCCC0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E72A87C-CCC2-44DC-B1E5-5C7EFDCCC0BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

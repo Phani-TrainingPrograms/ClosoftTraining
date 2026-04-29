@@ -24,6 +24,14 @@ namespace DataApplication.Services
         public void AddNewProduct(Product product)
         {
             //Handle all the business requirements here. 
+            if(product == null)
+            {
+                throw new Exception("[ServiceLayer]: Product Details are not set");
+            }
+            if(dataAccess == null)
+            {
+                throw new Exception("[ServiceLayer]: Data Access Component is not created or inaccessible");
+            }
             dataAccess.AddNewProduct(product.ProductId, product.ProductName, product.ProductPrice, product.ProductStock);
         }
 

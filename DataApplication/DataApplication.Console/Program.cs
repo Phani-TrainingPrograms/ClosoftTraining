@@ -40,11 +40,28 @@ namespace DataApplication.ConsoleUI
                 case "1": handleAddOperation(); break;
                 case "2": handleUpdateOperation(); break;
                 case "3": handleDeleteOperation(); break;
-                case "4": handleAddOperation(); break;
+                case "4": handleReadOperation(); break;
                 default:
                     return false;
             }
             return true;
+        }
+
+        //UI->Service->DAL->DB
+        private static void handleReadOperation()
+        {
+            try
+            {//App in debug mode stops here to allow user to execute the program step by step. Press F10 to move to next line or press F11 to move into a function if the line points to a function. 
+                _service.GetAllProducts().ForEach(product =>
+                {
+                    Console.WriteLine($"ProductId: {product.ProductId}: ProductName : {product.ProductName} costs {product.ProductPrice:C}");
+                });
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error occured while extracting records");
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private static void handleDeleteOperation()
@@ -70,7 +87,7 @@ namespace DataApplication.ConsoleUI
             if(!int.TryParse(Console.ReadLine(), out id))
             {
                 Console.WriteLine("not valid input, exiting the procedure");
-                return null;
+                throw new Exception("Invalid Inputs for a number");
             }
             Console.WriteLine("Enter the product Name ");
             string name = Console.ReadLine();
@@ -81,7 +98,7 @@ namespace DataApplication.ConsoleUI
             if(!int.TryParse(Console.ReadLine(), out count))
             {
                 Console.WriteLine("not valid input, exiting the procedure");
-                return null;
+                throw new Exception("Invalid Inputs for a number");
             }
             return new Product { ProductId = id, ProductName = name, ProductPrice = cost, ProductStock = count };
         }
@@ -91,18 +108,26 @@ namespace DataApplication.ConsoleUI
             try
             {
                 _service.UpdateProduct(product);
+                Console.WriteLine("Product details updated successfully");
             }
-            catch(Exception e) { Console.WriteLine(e.Message); }
+            catch(Exception e) 
+            { 
+                Console.WriteLine(e.Message); 
+            }
         }
 
         private static void handleAddOperation()
         {
-            var newProduct = TakeInputs();
             try
             {
+            var newProduct = TakeInputs();
+            if(newProduct == null){
+                return;
+            }
+            
                 _service.AddNewProduct(newProduct);
             }
-            catch(Exception e) { Console.WriteLine(e.ToString()); }
+            catch(Exception e) { Console.WriteLine(e.Message); }
         }
     }
 }
